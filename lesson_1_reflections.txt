@@ -1,0 +1,40 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Man kann die Änderungen in der neueren Version einfacher und schneller sehen. Die Commit-Messages der einzelnen Commits erleichtern zudem die Suche, weil sie schon auf die Änderungen bzw. die Absichten dieser Änderungen hindeutet.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Auf lange Sicht ist es besser, die Übersicht über alle Versionen zu behalten, weil ich dadurch sehen kann, wie ich mich als Programmierer entwickle. Welche Änderungen habe ich aus welchen Gründen vorgenommen? Was hätte ich besser anders gemacht oder welche Codeänderungen hätte ich gleich weglassen oder zusammenfassen können?
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manuelle Versionsverwaltung:
++ ich kann bei jeder Änderung entscheiden, ob diese groß genug für ein Commit ist oder nicht, ob sie eine logische Änderung nach sich zieht etc., sprich ich kann meinen eigenen Stil in der Versionsverwaltung entwickeln
++ ich kann durch die Commit-Message auf die Änderungen hinweisen, um die Versionen so leichter verständlich und strukturierter zu gestalten
++ ich kann durch die Erstellung von Branches, also „Ästen“ im Versionsbaum, gewährleisten, dass ich immer eine funktionierende Version meiner Software habe und in den Branches dann experimentell vorgehen
+
+- ich muss mich selbst darum kümmern, dass ich nach stundenlanger Arbeit nicht den Überblick verliere, weil ich zu wenige Commits erstellt habe
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    da ein Commit ein Snapshot aller im Repository befindlichen Files zu einem bestimmten Zeitpunkt ist, kann ich zusammenhängende Files (also wenn deren Codes voneinander abhängen) auch immer gleichzeitig und gemeinsam von Version zu Version weiterführen.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log zeigt die letzten Commits (angefangen mit dem aktuellsten) und beim Scrollen mit der Taste „Pfeil nach unten“ auch alle früheren Commits, sprich die gesamte History der Repository
+    git diff zeigt die Unterschiede zweier Versionen an, und zwar die Veränderungen vom zuerst eingegebenen Commit zum als zweites eingegebenen Commit (also der IDs der Commits)
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    da ich durch die richtige Verwaltung meiner Versionen immer sicherstellen kann, dass es eine funktionierende Version gibt, kann ich auch ohne weiteres am Code herumexperimentieren. Sollte ich den Überblick verlieren oder nichts mehr funktionieren, kehre ich einfach zu dieser Version zurück.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Ich werde Git in meine Xcode-Projekte einbinden, um mir eine saubere und professionelle Versionsverwaltung anzueignen.
