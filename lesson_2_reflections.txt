@@ -1,0 +1,33 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	Um eine Git-Repository zu erstellen, muss ich es dem System explizit über “git init“ mitteilen. Es ist schließlich nicht jeder Ordner automatisch eine Repository.
+Nach Eingabe des Befehls initialisiert Git die Repo im aktuellen Ordner und erstellt damit auch die zugehörige Datei .git.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	Die staging area stellt die Zwischenstufe zwischen working directory und repository dar, die es mir ermöglicht, nicht bei jedem Commit alle Files mitnehmen zu müssen. Ändere ich zB nur 1 File meiner working directory, wäre es unnötig, alle anderen Files in die neue Version ebenfalls mit dem Commit zu übertragen…oder wenn ich bei einigen Files nur unerhebliche Veränderungen vornehme, dann würden diese unnötigerweise auch bei git diff aufscheinen (Achtung: dennoch besser alle veränderten Files mitnehmen, da sich ein Tippfehler überall einschleichen kann!)
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Um immer 1 Commit pro logischer Änderung zu haben, kann ich nur jene Files in die staging area laden, die mit dieser Änderung in Zusammenhang stehen. Dadurch werden die anderen Files nicht in die Repo übertragen. Für etwaige gleichzeitige Veränderungen, die jedoch mit einem anderen Feature, einer Ausbesserung etc. des Codes zu tun haben, kann ich diesen Schritt wiederholen. Dadurch strukturiere ich meine Versionen so, dass nicht zu viele Veränderungen auf einmal (pro Commit) stattfinden und ich nicht den Überblick verliere.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	Wenn ich mit meinem Code experimentieren will oder größere Veränderungen (Einbau von Features, komplette Umstrukturierung des Codes etc.) vornehme, kann ich dies in einer extra branch (eben nicht der master-branch) durchführen und behalte somit immer meine funktionierende Version in der master-branch
+
+How do the diagrams help you visualize the branch structure?
+
+	Ich habe durch die Diagramme einen besseren Überblick über die einzelnen branches, deren Zugriffsmöglichkeiten und über etwaige merge-Vorgänge.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	es wird sozusagen eine branch in eine andere eingegliedert, am besten immer in die master-branch. weiter schreiben!!!
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+	answer
